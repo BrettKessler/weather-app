@@ -1,5 +1,6 @@
 {
   "env": {
-    "WEATHER_KEY": "8870612915f9a95c187f4b1fe1cee522"
+    "WEATHER_KEY": "8870612915f9a95c187f4b1fe1cee522",
+    "LOCATION_KEY": "3fbc1a9348ed4effb5fb8348230d30bc"
   }
 }

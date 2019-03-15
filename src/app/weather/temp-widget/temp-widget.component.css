@@ -12,8 +12,13 @@ h3 {
   font-weight: 400;
   font-size: 18px;
 }
+h4 {
+  color: #616161;
+  font-size: 1rem;
+}
 .wi {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .loader {
   color: #616161;

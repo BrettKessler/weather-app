@@ -1,0 +1,14 @@
+.forecast-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.day-container {
+  border-right: 1px solid gray;
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.day-container:last-of-type {
+  border: none;
+}

@@ -1,0 +1,14 @@
+<div class="forecast-container">
+  <div
+  *ngFor="let day of daysOfWeek"
+  class="day-container"
+  >
+    <p>{{day.time}}</p>
+    <i class="wi {{day.icon}}"></i>
+    <div class="temps-container">
+      <p>{{day.apparentTemperatureHigh}}</p>
+      <p>{{day.apparentTemperatureLow}}</p>
+    </div>
+  </div>
+</div>
+

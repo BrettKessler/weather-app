@@ -1,16 +1,21 @@
-<div *ngIf="weatherLoading" class="loader"></div>
-<div *ngIf="!weatherLoading">
-  <h1>Currently</h1>
-  <hr>
-  <i class="wi {{weatherIcon}}"></i>
-  <p>{{weatherForcast}} Wind Speed <b>{{windSpeed}}MPH</b></p>
-  <p>Gusting To <b>{{windGust}}MPH</b></p>
-  <div>
-    <h2>{{temperature}}<span>&#176;</span></h2>
-    <h3>Feels like <b>{{feelsLike}}</b></h3>
+<div class="container">
+  <div *ngIf="weatherLoading || addressLoading" class="loader"></div>
+  <div *ngIf="!weatherLoading && !addressLoading">
+    <h1>Currently</h1>
+    <p>{{location}}</p>
+    <hr>
+    <div>
+      <i class="wi {{weatherIcon}}"></i>
+      <h4><i>{{weatherForecast}}</i></h4>
+    </div>
+    <p>Wind Speed <b>{{windSpeed}}MPH</b></p>
+    <p>Gusting To <b>{{windGust}}MPH</b></p>
+    <div>
+      <h2>{{temperature}}<span>&#176;</span></h2>
+      <h3>Feels like <b>{{feelsLike}}</b></h3>
+    </div>
+    <i class="fa fa-refresh" (click)="onGetWeather()"aria-hidden="true"></i>
   </div>
-  <hr>
-  <i class="fa fa-refresh" (click)="onGetWeather()"aria-hidden="true"></i>
 </div>
 
 
