@@ -46,10 +46,7 @@ export class TempWidgetComponent implements OnInit, OnDestroy {
 
       this.weatherSub = this.weatherService.getWeatherListener()
       .subscribe((weather: any) => {
-        console.log(weather);
         weather = weather.data;
-        // weekData = weather.weekData;
-
         this.weatherLoading = false;
         this.temperature = Math.floor(weather.temperature);
         this.feelsLike = Math.floor(weather.apparentTemperature);

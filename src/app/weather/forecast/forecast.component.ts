@@ -23,7 +23,6 @@ export class ForecastComponent implements OnInit, OnDestroy {
       const daysOfWeekData = weather.weekData.data;
       const slicedDaysOfWeek = daysOfWeekData.slice(1, 6);
       _.each(slicedDaysOfWeek, (day) => {
-        console.log(day);
         const days = moment.unix(day.time).format('dddd');
         day.time = days;
         if (day.icon === 'clear-day') {
